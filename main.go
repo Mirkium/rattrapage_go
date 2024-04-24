@@ -9,7 +9,7 @@ import (
 
 func main() {
 	templates.InitTemplates()
-	
+
 	fs := http.FileServer(http.Dir("./assets/"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
