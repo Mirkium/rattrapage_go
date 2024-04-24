@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2f2d2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+}
+
+
+.lien {
+    color:#d8d5d5;
+}
+
+
+#img {
+    width: 100px;
+    height: 65px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    object-fit: cover;
+    align-items: center;
+}

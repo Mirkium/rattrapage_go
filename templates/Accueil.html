@@ -1,0 +1,30 @@
+{{define "accueil"}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Accueil</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        {{template "header"}}
+        {{range .}}
+            <div class="liste_produit">
+                <div class="produit">
+                    <img src="{{.ImgLink}}" alt="">
+                    <div class="contenue">
+                        <p id="name">{{.name}}</p>
+                        <p>{{.Price}}</p>
+                        <a href="/add"></a>
+                    </div>
+
+                </div>
+
+            </div>
+        {{end}}
+    </body>
+</html>
+{{end}}
